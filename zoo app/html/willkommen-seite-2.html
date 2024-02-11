@@ -1,0 +1,89 @@
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.7fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "suchfeld suchfeld suchfeld"
+      "willkommen willkommen willkommen"
+      "willkommen willkommen willkommen";
+  }
+  .suchfeld {
+    grid-area: suchfeld;
+    background-color: #b7d6ba;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  .search-pic {
+    position: absolute;
+    right: 15%;
+    width:30px;
+    height: 30px;
+    padding-top: 4px;
+  }
+
+  .search-pic-koala {
+    left: 12%;
+    width: 75px;
+    height: 60px;
+  }
+
+  .suchfeld input {
+    background-image: "../graphische_elemente/lupe.png";
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40px;
+  }
+  .willkommen {
+    grid-area: willkommen;
+    background-color: #f6e5d6;
+  }
+</style>
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/willkommensseite.css" /> -->
+    <title>willkommensseite</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="suchfeld">
+        <div style="width: 80%;">
+          <img class="search-pic-koala" src="../graphische_elemente/koala.png" />
+          <input
+            type="search"
+            id="site-search"
+            name="suchfeld-1"
+            maxlength="8"
+            placeholder="Zoo suchen"
+          />
+          <img class="search-pic" src="../graphische_elemente/lupe.png" />
+        </div>
+      </div>
+      <div class="willkommen">
+        <h1>Willkommen</h1>
+        <p>
+          Willkommen in der faszinierenden Welt der Tierreich-Vielfalt!
+          <br />Unsere Zoo-App öffnet die Tür zu einem atemberaubenden
+          Abenteuer, bei dem du die Wunder der Tierwelt hautnah erleben kannst.
+          <br />Tauche ein in die fesselnde Welt der exotischen Tiere, von
+          majestätischen Elefanten bis hin zu verspielten Löwen.
+          <br /><br />Diese App ist dein persönlicher Begleiter, um die Magie
+          der Natur zu erforschen und eine Verbindung zu den faszinierenden
+          Lebewesen herzustellen, die unseren Planeten bewohnen. <br />Lass uns
+          gemeinsam auf Safari gehen!
+        </p>
+        <img src="../bilder/tiere startseite.png" alt="Elefant" />
+      </div>
+    </div>
+  </body>
+</html>
