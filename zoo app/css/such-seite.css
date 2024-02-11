@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "suchfeld suchfeld suchfeld"
+    "ergebnis ergebnis ergebnis"
+    "ergebnis ergebnis ergebnis";
+}
+.suchfeld {
+  grid-area: suchfeld;
+  background-color: #b7d6ba;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.search-pic {
+  position: absolute;
+  right: 20%;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+}
+
+.search-pic-koala {
+  left: 12%;
+  width: 75px;
+  height: 60px;
+}
+
+.suchfeld input {
+  width: 100%;
+  height: 40px;
+}
+.ergebnis {
+  grid-area: ergebnis;
+  background-color: white;
+}
+
+.ergebnis table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  font-size: 30px;
+  color: #6a2f08;
+}
+.ergebnis td {
+  border-bottom: 1px solid grey;
+  padding-left: 30px;
+  height: 70px;
+}
