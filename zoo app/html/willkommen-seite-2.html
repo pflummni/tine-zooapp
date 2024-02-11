@@ -25,7 +25,7 @@
   .search-pic {
     position: absolute;
     right: 15%;
-    width:30px;
+    width: 30px;
     height: 30px;
     padding-top: 4px;
   }
@@ -45,6 +45,31 @@
   .willkommen {
     grid-area: willkommen;
     background-color: #f6e5d6;
+    background-image: "../graphische_elemente/farn.png";
+  }
+
+  .willkommen-text {
+    padding: 3%;
+  }
+
+  /* .willkommen-bg-01 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  }  */
+
+  .willkommen-bild-01 {
+    background-color: rgba(255, 255, 255, 0.88);
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+  .willkommen-bild-01 img {
+    width: 80%;
   }
 </style>
 
@@ -57,8 +82,11 @@
   <body>
     <div class="container">
       <div class="suchfeld">
-        <div style="width: 80%;">
-          <img class="search-pic-koala" src="../graphische_elemente/koala.png" />
+        <div style="width: 80%">
+          <img
+            class="search-pic-koala"
+            src="../graphische_elemente/koala.png"
+          />
           <input
             type="search"
             id="site-search"
@@ -70,19 +98,20 @@
         </div>
       </div>
       <div class="willkommen">
-        <h1>Willkommen</h1>
-        <p>
-          Willkommen in der faszinierenden Welt der Tierreich-Vielfalt!
-          <br />Unsere Zoo-App öffnet die Tür zu einem atemberaubenden
-          Abenteuer, bei dem du die Wunder der Tierwelt hautnah erleben kannst.
-          <br />Tauche ein in die fesselnde Welt der exotischen Tiere, von
-          majestätischen Elefanten bis hin zu verspielten Löwen.
-          <br /><br />Diese App ist dein persönlicher Begleiter, um die Magie
-          der Natur zu erforschen und eine Verbindung zu den faszinierenden
-          Lebewesen herzustellen, die unseren Planeten bewohnen. <br />Lass uns
-          gemeinsam auf Safari gehen!
-        </p>
-        <img src="../bilder/tiere startseite.png" alt="Elefant" />
+        <!-- <img src="../graphische_elemente/farn.png" alt="farn" class="willkommen-bg-01"> -->
+        <div class="willkommen-text">
+          <h1>Willkommen</h1>
+          <p>
+            Willkommen in der faszinierenden Welt der Tierreich-Vielfalt!<br />
+            Unsere Zoo-App öffnet die Tür zu einem atemberaubenden Abenteuer, bei dem du die Wunder der Tierwelt hautnah erleben kannst. <br />
+            Tauche ein in die fesselnde Welt der exotischen Tiere, von majestätischen Elefanten bis hin zu verspielten Löwen. <br /><br />
+            Diese App ist dein persönlicher Begleiter, um die Magie der Natur zu erforschen und eine Verbindung zu den faszinierenden Lebewesen herzustellen, die unseren Planeten bewohnen. <br />
+            Lass uns gemeinsam auf Safari gehen!
+          </p>
+        </div>
+        <div class="willkommen-bild-01">
+          <img src="../bilder/tiere startseite.png" alt="Elefant" />
+        </div>
       </div>
     </div>
   </body>
