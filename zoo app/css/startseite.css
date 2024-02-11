@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    height: 100vh;
+    background-color:bisque;
+}
+
+header{
+    grid-area: header;
+    background-color: bisque;
+}
+
+main{
+    grid-area: main;
+    background-color: bisque;
+}
+
+footer{
+    grid-area: footer;
+    background-color: bisque;  
+}
+
+@media (min-width: 600px) {
+    img {
+        width: 60%;
+    }
+}

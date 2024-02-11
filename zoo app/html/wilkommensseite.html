@@ -1,0 +1,58 @@
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    height: 100vh;
+    background-color: bisque;
+  }
+
+  header {
+    grid-area: header;
+    background-color: bisque;
+  }
+
+  main {
+    grid-area: main;
+    background-color: bisque;
+    color: #6A2F08;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: bisque;
+  }
+
+  @media (min-width: 600px) {
+    img {
+      width: 60%;
+    }
+  }
+</style>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/wilkommensseite.css" /> -->
+    <title>wilkommensseite</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section id="suchfeld"></section>
+      <section id="wilkommen-text">
+        <h1>Wilkommen</h1>
+        <p>
+          Wilkommen auf der Zoo App. Hier können Sie sich über die Tiere des
+          Zoos informieren und sich über die Öffnungszeiten informieren.
+        </p>
+      </section>
+      <section id="bild"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
