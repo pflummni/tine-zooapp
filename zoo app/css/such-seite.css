@@ -56,3 +56,12 @@ body {
   padding-left: 30px;
   height: 70px;
 }
+
+a {
+  color: #000; /* Change the color of the text */
+  text-decoration: none; /* Remove the underline */
+}
+
+a:hover {
+  color: #888; /* Change the color of the text when hovered */
+}
